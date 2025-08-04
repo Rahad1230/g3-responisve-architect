@@ -3,8 +3,317 @@
  * Created: Sunday, 3rd August 2025 4:25:01 am
  * Author: Md.Rahad (mdrahad1296@gmail.com)
  * -----
- * Last Modified: Sunday, 3rd August 2025 4:25:03 am
+ * Last Modified: Monday, 4th August 2025 6:09:21 am
  * Modified By: Md.Rahad (mdrahad1296@gmail.com)
  * -----
  * Copyright (c) 2025 Islamic University
  */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sintony:wght@400;700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.work-sans-normal {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*shared styles */
+.display {
+    display: none;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.text-gray {
+    color: rgb(66, 66, 66);
+    font-family: Work Sans;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+.text-light-gray {
+    color: rgb(114, 114, 114);
+}
+
+.bg-light {
+    background-color: rgba(255, 144, 14, 0.1);
+
+}
+
+.btn-primary {
+    border-radius: 8px;
+    background-color: rgb(255, 144, 14);
+    color: white;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: none;
+}
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main>section {
+    margin-top: 130px;
+
+}
+
+.section-title {
+    font-weight: 700px;
+    font-size: 2.8rem;
+}
+
+/*Header style*/
+
+/*navbar style*/
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.brand {
+    color: rgb(19, 19, 19);
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.nav-item {
+    list-style: none;
+    margin-right: 30px;
+
+}
+
+.nav-link {
+    text-decoration: none;
+    font-weight: 500;
+
+}
+
+.navbar,
+.banner {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/*banner design*/
+.banner-content {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.banner-title {
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.banner-image {
+    width: 100%;
+}
+
+.teams {
+    align-items: center;
+}
+
+.team-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.our-features {
+    margin-left: 130px;
+    max-width: 537px;
+}
+
+#quick-list {
+    font-weight: 500;
+}
+
+.text-primary {
+    color: rgb(255, 144, 14);
+}
+
+/* Features section related style */
+.features {
+    gap: 100px;
+}
+
+#feature-section-title {
+    border-left: 5px solid rgb(255, 144, 14);
+    padding-left: 20px;
+}
+
+.feature-card {
+    padding: 30px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.feature-card .feature-title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#experience-badge {
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+    ;
+}
+
+#experience-year {
+    font-size: 4rem;
+    font-weight: bold;
+
+}
+
+/* Fact related style*/
+.facts-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.fact-card {
+    border: 1px solid #FF900E;
+    width: 240px;
+    height: 240px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.fact-number {
+    font-size: 2.8rem;
+    font-weight: 600px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.fact-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.fact-description {
+    max-width: 540px;
+}
+
+/* sponsor related style*/
+.sponsor-info {
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.sponsor-companies {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.sponsor-companies img {
+    filter: grayscale(100%);
+}
+
+/* footer design */
+footer{
+    max-width: 1440px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 100px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer>p {
+    Font-weight: 400;
+    Font-size: 20px;
+    color: rgb(66, 66, 66);
+    margin-top: 38px;
+}
+
+/*Responsive for small-device */
+@media screen and (max-width:576px) {
+
+    .navbar,
+    .nav-links,
+    .teams,
+    .features {
+        flex-direction: column;
+    }
+
+    .team-img-container,
+    .facts-container,
+    .sponsor-companies {
+        grid-template-columns: repeat(1, 1fr);
+
+
+    }
+
+    .our-features {
+        margin-left: 20px;
+    }
+
+    .facts-container {
+        justify-items: center;
+        gap: 24px;
+    }
+
+    .sponsor-companies {
+        justify-content: center;
+        justify-items: center;
+        gap: 50px;
+    }
+
+    .featured-architect img {
+        width: 100%;
+    }
+
+    #experience-badge {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+}
+
+/*  Responsive for Medium device */
+@media screen and (min-width:577px) and (max-width:992px) {
+
+    .teams,
+    .features {
+        flex-direction: column;
+    }
+
+    .our-features {
+        margin: 50px auto;
+    }
+
+    .sponsor-companies,
+    .facts-container {
+
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        justify-content: center;
+    }
+
+    #experience-badge {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+}
